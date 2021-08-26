@@ -2,8 +2,8 @@ const inputClr = document.querySelectorAll('.input-clr');
 const gradientValue = document.getElementById('gradient-value');
 
 // init linear gradient:
-inputClr[0].value = '#9effae';
-inputClr[1].value = '#2acba3';
+inputClr[0].setAttribute('value', "#9effae");
+inputClr[1].setAttribute('value', "#2acba3");
 var clr1 = inputClr[0].value, clr2 = inputClr[1].value;
 document.body.style.backgroundImage = `linear-gradient( to right, ${clr1}, ${clr2})`;
 
